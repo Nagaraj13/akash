@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>service</title>
+  <link rel="stylesheet" href="./css/service.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">WebDev.</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a  class="nav-link Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link Service">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link producat">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link contact">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+
+
+<section>
+    <div class="main">
+        <div class="container">
+                    <div class="img">
+                        <img src="./image/delivery.jpeg" alt="1">
+                                </div>
+                    <div class="text">
+                        <span class="h1"><strong>free delivery</strong></span>
+                        <p>forzon directly manages delivery for this product.<br> Order delivery tracking to your doorstep is available
+                        </p>
+                    </div>
+
+                    </div>
+          <div class="container">
+                        <div class="img">
+                        <img src="./image/replace.jpeg" alt="1">
+                        </div>
+            <div class="text">
+              <span class="h1"><strong>replacement</strong></span>
+              <p>This item is eligible for free replacement, within 10 days of delivery, in an unlikely event of damaged,
+                defective or different item delivered to you.<br> You can also return the product within 10 days of delivery
+                for
+                full refund.
+                cards, and other accompaniments in manufacturer packaging for a successful return pick-up.<br> We may
+                contact
+               
+              </p>
+            </div>
+            </div>
+    
+            
+            <div class="container">
+                <div class="img">
+                    <img src="./image/maintance.jpeg" alt="1">
+                </div>
+              <div class="text">
+                <span class="h1"><strong>maintainance</strong></span>
+                <p>Many people give their furniture a good clean once every few months. ... Therefore, it's important to
+                  freshen up the fabrics or wipe down the wooden surfaces to ensure they are clean and unaffected.<br> You
+                  may
+                  find that when you're cleaning, you notice a new mark or some fading
+                </p>
+              </div>
+    
+            </div>
+    
+    
+    
+    
+    
+    
+    
+          </div>
+</section>
+  
+      <script>
+
+
+
+        let homebtn=document.querySelector(".Home");
+        
+        homebtn.addEventListener('click',()=>{
+        
+        window.location="home.html";
+        
+        });
+        
+        
+        //below servic
+        
+        let servicebtn=document.querySelector(".Service");
+        
+        servicebtn.addEventListener('click',()=>{
+        
+            window.location="service.html";
+        
+        });
+        
+        //below product
+         let productbtn=document.querySelector(".producat");
+        
+         productbtn.addEventListener('click',()=>{
+        
+        window.location="products.html";
+        
+         });
+        
+        
+         let contactsbtn=document.querySelector(".contact");
+        
+         contactsbtn.addEventListener('click',()=>{
+        
+        window.location="contact.html";
+        
+         });
+        
+        
+        
+        
+         
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        const introheader =document.querySelector(".image-content");
+        hamburger.addEventListener("click", mobileMenu);
+        
+        function mobileMenu() {
+            
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+        
+        const navLink = document.querySelectorAll(".nav-link");
+        
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+        
+        function closeMenu() {
+           
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+          </script>
+        
+
+
+
+
+
+
+</body>
+
+</html>
